@@ -684,8 +684,6 @@ function AchievementsScreen({ onBack }) {
 /* ── ANALYTICS ── */
 function AnalyticsScreen({ onBack, habits }) {
   const [mainTab, setMainTab] = useState("Habits");
-  const habTabs   = ["Overview","Habits","Plans","Correlations"];
-  const journTabs = ["Overview","Journal","Mood"];
   const [subTab, setSubTab] = useState("Overview");
 
   const done  = habits.filter(h=>h.done).length;
